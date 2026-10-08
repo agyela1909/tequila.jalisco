@@ -1,0 +1,298 @@
+
+.btn-tema {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 8px 14px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  background: transparent;
+  color: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.btn-tema:hover { background: rgba(255, 255, 255, 0.2); }
+ 
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e8;
+    color: #333;
+}
+ 
+header {
+    background-color: #6b7d32;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    position: relative;
+}
+ 
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+ 
+header p {
+    font-size: 19px;
+}
+ 
+nav {
+    background-color: #3f5120;
+    text-align: center;
+    padding: 15px;
+}
+ 
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+ 
+nav a:hover {
+    background-color: white;
+    color: #3f5120;
+}
+ 
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+ 
+section {
+    background-color: white;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px #bbb;
+}
+ 
+section h2 {
+    text-align: center;
+    color: #53652a;
+    font-size: 28px;
+}
+ 
+.inicio {
+    text-align: center;
+}
+ 
+.imagen-principal {
+    width: 70%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+ 
+.inicio p {
+    line-height: 1.6;
+}
+ 
+button {
+    background-color: #6b7d32;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+ 
+button:hover {
+    background-color: #3f5120;
+}
+ 
+.imagen-seccion {
+    display: block;
+    width: 70%;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+ 
+.tarjetas {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 20px;
+}
+ 
+.tarjeta {
+    background-color: #faf9f3;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+ 
+.tarjeta img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+ 
+.tarjeta h3 {
+    color: #6b7d32;
+    font-size: 21px;
+}
+ 
+.tarjeta p {
+    padding: 0 15px 15px;
+    line-height: 1.5;
+}
+ 
+#actividades li {
+    margin: 12px 0;
+}
+ 
+.enlace {
+    display: inline-block;
+    background-color: #6b7d32;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+ 
+.enlace:hover {
+    background-color: #3f5120;
+}
+ 
+.formulario {
+    max-width: 700px;
+    margin: 30px auto;
+}
+ 
+form {
+    display: flex;
+    flex-direction: column;
+}
+ 
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+ 
+input,
+select,
+textarea {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    font-size: 16px;
+}
+ 
+textarea {
+    resize: vertical;
+}
+ 
+form button {
+    margin-top: 20px;
+}
+ 
+footer {
+    background-color: #3f5120;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+ 
+@media (max-width: 700px) {
+ 
+    header h1 {
+        font-size: 30px;
+    }
+ 
+    nav a {
+        display: block;
+        margin: 8px auto;
+        max-width: 250px;
+    }
+ 
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+ 
+    .imagen-principal,
+    .imagen-seccion {
+        width: 100%;
+    }
+ 
+    section {
+        padding: 20px;
+    }
+ 
+}
+ 
+body.oscuro {
+    background-color: #1a1d14;
+    color: #e6e6e6;
+}
+ 
+body.oscuro header {
+    background-color: #2f3a17;
+}
+ 
+body.oscuro nav,
+body.oscuro footer {
+    background-color: #1f2810;
+}
+ 
+body.oscuro nav a:hover {
+    background-color: white;
+    color: #1f2810;
+}
+ 
+body.oscuro section {
+    background-color: #262a1e;
+    box-shadow: 0 3px 10px #000;
+}
+ 
+body.oscuro section h2,
+body.oscuro .tarjeta h3 {
+    color: #a9c05a;
+}
+ 
+body.oscuro .tarjeta {
+    background-color: #2d3224;
+    border-color: #454b38;
+}
+ 
+body.oscuro button,
+body.oscuro .enlace {
+    background-color: #55672a;
+}
+ 
+body.oscuro button:hover,
+body.oscuro .enlace:hover {
+    background-color: #6b7d32;
+}
+ 
+body.oscuro .btn-tema {
+    background: transparent;
+}
+ 
+body.oscuro .btn-tema:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+ 
+body.oscuro input,
+body.oscuro select,
+body.oscuro textarea {
+    background-color: #1a1d14;
+    color: #e6e6e6;
+    border-color: #555;
+}
+ 

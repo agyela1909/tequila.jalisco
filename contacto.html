@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Contacto/Tequila, Jalisco</title>
+    <link rel="stylesheet"
+          href="css/estilos.css">
+</head>
+ 
+<body>
+ 
+    <header>
+        <h1>Tequila, Jalisco</h1>
+        <p>Contacto</p>
+        <button id="btn-tema" class="btn-tema" type="button">Modo oscuro</button>
+    </header>
+ 
+     <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="lugares.html">Lugares</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+ 
+    <main>
+ 
+        <section class="formulario">
+ 
+            <h2>¿Te gustaría conocer Tequila?</h2>
+            <p>
+                Completa el siguiente formulario y cuéntanos
+                qué te gustaría conocer de Tequila, Jalisco.
+            </p>
+ 
+            <form onsubmit="enviarFormulario(event)">
+ 
+                <label for="nombre">Nombre:</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    required
+                >
+ 
+                <label for="correo">Correo electrónico:</label>
+                <input
+                    type="email"
+                    id="correo"
+                    required
+                >
+ 
+                <label for="interes">¿Qué te interesa conocer?</label>
+                <select id="interes">
+                    <option>
+                        Historia
+                    </option>
+                    <option>
+                        Campos de agave
+                    </option>
+                    <option>
+                        Centro de Tequila
+                    </option>
+                    <option>
+                        Cultura
+                    </option>
+                    <option>
+                        Paisajes
+                    </option>
+                </select>
+ 
+                <label for="comentario">Comentario:
+                </label>
+                <textarea
+                    id="comentario"
+                    rows="5"
+                    required>
+                </textarea>
+ 
+                <button type="submit">Enviar
+                </button>
+ 
+            </form>
+ 
+            <p id="respuesta"></p>
+ 
+        </section>
+ 
+    </main>
+ 
+    <footer>
+        <p>
+            Tequila, Jalisco
+        </p>
+    </footer>
+ 
+    <script src="js/script.js"></script>
+ 
+</body>
+ 
+</html>
